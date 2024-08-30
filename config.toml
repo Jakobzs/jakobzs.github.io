@@ -1,6 +1,16 @@
 # The URL the site will be built for
 base_url = "https://jakobzs.github.io"
 
+# The taxonomies to be rendered for that site and their configuration
+# Example:
+#     taxonomies = [
+#       {name = "tags", rss = true}, # each tag will have its own RSS feed
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no RSS or pagination
+#     ]
+#
+taxonomies = [{ name = "tags", rss = false }]
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
@@ -42,7 +52,7 @@ enable = false
 shortname = "my-supa-dupa-blog"
 
 [extra.author]
-name = "The Author"
+name = "Jakob"
 email = "author@domain.com"
 
 [extra.google_analytics]
